@@ -1,0 +1,19 @@
+echo Update documentation
+mycwd=$(pwd)
+cd ../../docs  && make github
+cd ../../gh-pages/html
+while true; do
+    read -p "Do you wish to push the updated documenation? y or n " yn
+    case $yn in
+        [Yy]* ) 
+            git add .    
+            echo Add a commit message to your updated documentation
+            read message
+            git commit -m "$message"
+            git push origin gh-pages
+            break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+exit 0
