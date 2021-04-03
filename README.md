@@ -16,7 +16,7 @@ The process is simple.
 link](./images/image-1.png "1")
 
 Then when you go to the
-<https://%22yourgithubname>\".github.io/name-of-the-repo/ you will see
+<https://yourgithubname.github.io/name-of-the-repo/> you will see
 the web page you created.
 
 That is it.
