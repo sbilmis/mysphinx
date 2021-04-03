@@ -15,15 +15,18 @@ The process is simple.
 ![You can see the name of the repo as well as the web-address of the
 link](./images/image-1.png "1")
 
-Then when you go to the <https://sbilmis.github.io/name-of-the-repo/>
-you will see the web page you created.
+Then when you go to the
+<https://%22yourgithubname>\".github.io/name-of-the-repo/ you will see
+the web page you created.
 
 That is it.
 
-Let me tell how you will modify the documentation. You sill see the
-folder \"name-of-the-repo\" where you run the `sphinx.sh` script. Inside
-that folder you will have gh-pages branch folder and master folder.
-gh-pages folder is the one that is seen as your web page.
+How do I modify the documentation.
+
+You will see the folder \"name-of-the-repo\" where you run the
+`sphinx.sh` script. Inside that folder you will have gh-pages branch
+folder and master folder. gh-pages folder is the one that is seen as
+your web page.
 
 -   Go to the `master/docs/source` folder. Create your `.rst`{.verbatim}
     files. Run the make github command. You will see that github-pages
@@ -42,7 +45,7 @@ following script `sphinxhook`{.verbatim} script everytime you change the
 documentation.
 
 ```{=bash}
-cd master/.git/hooks
+cd name-of-the-repo/master/.git/hooks
 ./sphinxhook
 ```
 Thanks to the following reference pages for creating these scripts.
@@ -51,3 +54,5 @@ Thanks to the following reference pages for creating these scripts.
 
 -   <https://rantzen.net/2020/02/tutorial--using-sphinx-clever-with-github-pages/>
 -   <https://daler.github.io/sphinxdoc-test/includeme.html>
+-   <https://pypi.org/project/sphinx-rtd-theme/>
+-   <https://www.sphinx-doc.org/en/master/>
