@@ -1,5 +1,6 @@
 echo Update documentation
-mycwd=$(pwd)
+mycwd=$(dirname $0)
+cd $mycwd
 cd ../../docs  && make github
 cd ../../gh-pages/html
 while true; do
